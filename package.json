@@ -1,0 +1,92 @@
+{
+  "name": "@amoo/react-starter",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "🌞 A minimist starter template for react typescript library",
+  "keywords": [
+    "template",
+    "react",
+    "starter",
+    "typescript"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack .",
+    "test": "vitest",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./client": {
+      "import": "./dist/components/client.js",
+      "require": "./dist/components/client.cjs"
+    },
+    "./shared": {
+      "import": "./dist/components/shared.js",
+      "require": "./dist/components/shared.cjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/components/*",
+        "./*"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://github.com/oolongstack/react-starter",
+  "bugs": {
+    "url": "https://github.com/oolongstack/react-starter/issues"
+  },
+  "author": "amoo <oolong.stack@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:oolongstack/react-starter.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.4",
+    "@changesets/cli": "^2.28.1",
+    "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "jsdom": "^26.0.0",
+    "prettier": "^3.5.3",
+    "rollup-plugin-preserve-directives": "^0.4.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0",
+    "vite-plugin-dts": "^4.5.3",
+    "vitest": "^3.0.9"
+  }
+}
