@@ -5,7 +5,7 @@ import { preserveDirectives } from "rollup-plugin-preserve-directives";
 import dts from "vite-plugin-dts";
 
 const packageJson = JSON.parse(
-  readFileSync("./package.json", { encoding: "utf-8" })
+  readFileSync("./package.json", { encoding: "utf-8" }),
 );
 
 const globals = {
