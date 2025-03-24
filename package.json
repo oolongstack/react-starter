@@ -18,7 +18,7 @@
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack .",
-    "test": "vitest",
+    "test": "vitest run",
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
   },
