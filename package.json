@@ -1,6 +1,6 @@
 {
   "name": "@pancato/react-starter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "type": "module",
   "description": "🌞 A minimist starter template for react typescript library",
   "keywords": [
@@ -51,14 +51,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/oolongstack/react-starter",
+  "homepage": "https://github.com/pancato/react-starter",
   "bugs": {
-    "url": "https://github.com/oolongstack/react-starter/issues"
+    "url": "https://github.com/pancato/react-starter/issues"
   },
-  "author": "amoo <oolong.stack@gmail.com>",
+  "author": "pancato <pancat.ooo@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:oolongstack/react-starter.git"
+    "url": "git+git@github.com:pancato/react-starter.git"
   },
   "files": [
     "dist"

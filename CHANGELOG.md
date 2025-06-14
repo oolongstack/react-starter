@@ -1,5 +1,11 @@
 # @amoo/react-starter
 
+## 1.0.6
+
+### Patch Changes
+
+- pkg update github and author
+
 ## 1.0.5
 
 ### Patch Changes
